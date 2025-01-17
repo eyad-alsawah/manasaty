@@ -3,15 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Manasaty App</title>
+    <title>Manasaty QR Codes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 200px; /* Adjust the size of the QR images */
+            height: auto;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Download Manasaty App</h1>
-    <p>Click the link below to install the Manasaty app:</p>
-    <a href="itms-services://?action=download-manifest&url=https://manasaty.netlify.app/manasaty.plist">Install Manasaty</a>
-    
-    <h2>Direct Download Link</h2>
-    <p>If you want to download the IPA file directly, click the link below:</p>
-    <a href="https://manasaty.netlify.app/manasaty.ipa" download>Download Manasaty IPA</a>
+
+    <div class="section">
+        <h2>Manasaty v1.0.0_1 (Stage)</h2>
+        <img src="manasaty_v1.0.0_1_stage.png" alt="QR Code for Manasaty Stage">
+        <a href="itms-services://?action=download-manifest&url=https://manasaty.netlify.app/manasaty_stage.plist">Download Stage</a>
+    </div>
+
+    <div class="section">
+        <h2>Manasaty v1.0.0_1 (Test)</h2>
+        <img src="manasaty_v1.0.0_1_test.png" alt="QR Code for Manasaty Test">
+        <a href="itms-services://?action=download-manifest&url=https://manasaty.netlify.app/manasaty_test.plist">Download Test</a>
+    </div>
+
 </body>
 </html>
